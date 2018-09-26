@@ -9,40 +9,38 @@
 
   <body>
     <main>
+      
       <header class="top">
         <h2 class="title">TIP CALCULATOR</h2>
       </header>
-      
       <section class="middle">
         <div class="container">
           <form>
             <p class="question-one">How much was your bill?</p>
-            $ <input class="total-bill" type="number" name="totalBill" placeholder="10.00" min="0.00"/>
+            $ <input class="total-bill" type="number" name="totalBill" placeholder="10.00"/>
           
             <p class="question-two">What percent tip will you leave?</p>
             <select class="percent-tip">
-              <option value="20">20% - Outstanding Service</option>
-              <option value="18">18% - Great Service</option>
-              <option value="15" selected="selected">15% - Good Service</option>
-              <option value="10">10% - Bad Service</option>
-              <option value="05">05% - Terrible Service</option>
+              <option value=".20">20% - Outstanding Service</option>
+              <option value=".18">18% - Great Service</option>
+              <option value=".15" selected="selected">15% - Good Service</option>
+              <option value=".10">10% - Bad Service</option>
+              <option value=".05">05% - Terrible Service</option>
             </select>
             
             <p class="question-three">How many people are splitting this bill?</p>
-            <input class="split" type="number" name="split" value="1" min="1">
+            <input class="tip-split" type="number" name="split" value="1" min="1">
             <br>
-            <button class="button">Calculate!</button>
+            <button class="submitButton" type="button">Calculate!</button>
           </form>
         </div>
       </section>
-      
       <footer>
         <p>TIP AMOUNT</p>
-        <p>$0.00 Each</p>
+        <p class="total-tip">$0.00 Each</p>
       </footer>
       
     </main>
-
 
 
   <script src="js/main.js"></script>
