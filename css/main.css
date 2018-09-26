@@ -105,6 +105,7 @@ main {
 
 .submitButton:hover {
   background-color: #0F99A1;
+  color: #fff;
 }
 
 input[type=number]::-webkit-inner-spin-button, 

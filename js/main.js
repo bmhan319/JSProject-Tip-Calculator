@@ -12,7 +12,12 @@ function calcTip() {
   let tipLine = document.querySelector('.total-tip');
   let totalTip = billTotal() * tipAmount / billSplit();
   let totalTipFixed = totalTip.toFixed(2);
-  tipLine.innerHTML = "$" + totalTipFixed; + " Each"
+  
+  if (billSplit() > 1) {
+    tipLine.innerHTML = "$" + totalTipFixed + " Each";
+  } else if (billSplit() == 1) {
+    tipLine.innerHTML = "$" + totalTipFixed;
+  }
 }
 
 
@@ -20,15 +25,21 @@ function calcTip() {
 function billTotal() {
   let message = document.querySelector('.question-one');
   billAmount = TOTAL_BILL.value;
+  let parseBill;
+  let fixBill;
   
   if (billAmount === "" || billAmount <= "0") {
     message.innerHTML = "Please enter in a correct amount.";
     message.setAttribute('style', 'color:red');
+    fixBill = 0;
   } else {
     message.innerHTML = "How much was your bill?";
     message.setAttribute('style', 'color:');
-    return billAmount;
+    parseBill = parseFloat(billAmount);
+    fixBill = parseBill.toFixed(2);
+    TOTAL_BILL.value = fixBill;
   }
+  return fixBill;
 };
 
 function billSplit() {
