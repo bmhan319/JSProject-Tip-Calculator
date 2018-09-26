@@ -1,3 +1,5 @@
+/* background */
+
 html {
   margin: 0;
   height: 100%;
@@ -13,17 +15,21 @@ body {
   align-items: center;
 }
 
+/* Calculator */
 main {
+  display:inherit;
+  flex-direction: column;
   width: 414px;
   height: auto;
 }
 
+/* Header */
 .top {
-  height: 50px;
+  height: 70px;
   background-color: #000;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  display: flex;
+  display: inherit;
   justify-content: center;
   align-items: center;
 }
@@ -32,3 +38,30 @@ main {
   color: #fff;
   font-size: 1.25rem;
 }
+
+/* Section */
+.middle {
+  display: inherit;
+  background-color: #fff;
+  height: auto;
+}
+
+.container {
+  display: inherit;
+  width: 100%;
+  margin: 20px;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  height:auto;
+  background-color: #fff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-align: center;
+
+
+
+
+
