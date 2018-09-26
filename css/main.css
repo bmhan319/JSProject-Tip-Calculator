@@ -19,7 +19,7 @@ body {
 main {
   display:inherit;
   flex-direction: column;
-  width: 414px;
+  width: 390px;
   height: auto;
 }
 
@@ -51,6 +51,70 @@ main {
   width: 100%;
   margin: 20px;
 }
+
+
+.total-bill {
+  width: 326px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding-left: 5px;
+  outline: none;
+}
+
+.total-bill::placeholder {
+  color: #aaa;
+}
+
+.question-one,
+.question-two,
+.question-three {
+  margin: 30px 0 10px;
+}
+
+.percent-tip {
+  width: 349px;
+  height: 35px;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-shadow: -1px -1px 0px 0px #aaa;
+  background-color: #fff;
+  border-bottom: 2px solid #eee;
+  border-right: 2px solid #eee;
+  outline: none;
+}
+
+.split {
+  width: 339px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding-left: 5px;
+  outline: none;
+}
+
+.button {
+  width:200px;
+  height: 50px;
+  margin: 40px 75px 0;
+  background-color: #15CED9;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  outline:none;
+}
+
+.button:hover {
+  background-color: #0F99A1;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+
+
 
 /* Footer */
 footer {
