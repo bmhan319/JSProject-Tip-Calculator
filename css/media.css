@@ -19,8 +19,14 @@ main {
 .tip-split {
   width: 289px;
 }
+  
+.question-one,
+.question-two,
+.question-three {
+  margin: 25px 0 10px;
+}
 
 .submitButton {
-  margin: 40px 50px 0;
+  margin: 25px 50px 0;
 }
 
