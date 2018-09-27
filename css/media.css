@@ -5,6 +5,7 @@
 
 /* Calculator */
 main {
+  margin: 20px 0;
   width: 340px;
 }
 
@@ -23,7 +24,7 @@ main {
 .question-one,
 .question-two,
 .question-three {
-  margin: 25px 0 10px;
+  margin: 20px 0 10px;
 }
 
 .submitButton {
