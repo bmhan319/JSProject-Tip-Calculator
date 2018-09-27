@@ -1,0 +1,26 @@
+/* Sized to 360x640 */
+
+@media only screen and (max-width: 360px) {
+
+
+/* Calculator */
+main {
+  width: 340px;
+}
+
+.total-bill {
+  width: 276px;
+}
+
+.percent-tip {
+  width: 299px;
+}
+
+.tip-split {
+  width: 289px;
+}
+
+.submitButton {
+  margin: 40px 50px 0;
+}
+
